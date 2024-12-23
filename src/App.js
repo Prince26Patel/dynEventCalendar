@@ -68,29 +68,34 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <div className="content-container">
-        {/* Calendar for selecting days */}
-        <div className="calendar-container">
+    <div className="flex flex-col items-center p-4 bg-gray-900 text-white min-h-screen">
+      <div className="flex flex-col md:flex-row gap-6 w-full max-w-6xl">
+        {/* Calendar Section */}
+        <div className="flex-1 bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h1 className="text-2xl font-bold text-center mb-4">Calendar</h1>
           <CalendarWrapper onDaySelect={handleDaySelect} />
         </div>
 
-        <div className="separation-line" />
+        {/* Separation Line for Medium Screens */}
+        <div className="hidden md:block w-[2px] bg-gray-600" />
 
-        {/* Event List for the selected day */}
-        <div className="event-container">
-          {selectedDay && (
+        {/* Event List Section */}
+        <div className="flex-1 bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h1 className="text-2xl font-bold text-center mb-4">Events</h1>
+          {selectedDay ? (
             <EventList
               events={events[selectedDay] || []}
               onEdit={handleEditEvent}
               onDelete={handleDeleteEvent}
               selectedDay={selectedDay}
             />
+          ) : (
+            <p className="text-center text-gray-400">Select a date to view events</p>
           )}
         </div>
       </div>
 
-      {/* Event Modal for adding or editing events */}
+      {/* Event Modal */}
       <EventModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
