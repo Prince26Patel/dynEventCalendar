@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Dynamic Event Calendar Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## *Objective*
 
-## Available Scripts
+Build a *Dynamic Event Calendar Application* showcasing skills in React.js logic, clean UI design, and deployment.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## *Description*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+An interactive calendar app using *React.js* and *shadcn* components for managing events with state persistence via *localStorage*.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## *Features*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- *Calendar View*: Monthly grid with navigation.
+- *Event Management*: Add, edit, delete events with details (name, time, description).
+- *Event List*: View all events for a day in a modal or side panel.
+- *Data Persistence*: Events saved across sessions.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## *UI Highlights*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Modern interface with *shadcn* components.
+- Grid layout highlighting current and selected days.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## *Logic & Bonus Features*
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Automatic month transitions.
+- Prevents overlapping events.
+- Keyword-based event filtering.
+- Optional: Color-coded and recurring events.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## *Setup and Installation*
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
+   bash
+   git clone <https://github.com/Prince26Patel/dynEventCalendar.git>
+   
+2. Navigate to the project directory:
+   bash
+   cd EventCalendar
+   
+3. Install dependencies:
+   bash
+   npm install
+   
+4. Start the development server:
+   bash
+   npm start
+   
+5. Open the app in your browser:
+   - Navigate to [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## *Deployment*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project is deployed on *Vercel*. Access the live application here:
 
-### Code Splitting
+vercel link:https://dyn-event-calendar-ztxh.vercel.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+GitHub repository: https://github.com/Prince26Patel/dynEventCalendar
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## *Technology Stack*
 
-### Making a Progressive Web App
+- *Frontend:* React.js, shadcn components
+- *Styling:* Tailwind CSS
+- *State Management:* React Context API (or useState if applicable)
+- *Persistence:* localStorage
+- *Deployment:* Vercel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## *Future Improvements*
 
-### Deployment
+- Add Google Calendar integration.
+- Support for importing/exporting events.
+- Enhance filtering and search capabilities.
+- Provide a mobile-responsive design.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## *Credits*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built by [Prince Patel](#). For more information, feel free to reach out or visit the [React documentation](https://reactjs.org/) and [shadcn documentation](https://ui.shadcn.com/docs/).
+
+---
+
+## *License*
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
